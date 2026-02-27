@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Logenthiran Machap - Senior Lecturer at UTHM specializing in Bioinformatics, Machine Learning, and Data Science.">
+    <title>Dr. Logenthiran Machap | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+    <div class="overlay" onclick="toggleSidebar()"></div>
+
+    <div class="sidebar" id="sidebar">
+        <a href="index.html" class="sidebar-brand">Dr. Logen</a>
+        <ul class="sidebar-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>&copy; 2025 Dr. Logenthiran Machap</p>
+            <p class="small">UTHM, Malaysia</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section class="hero" style="background: linear-gradient(rgba(13, 44, 84, 0.9), rgba(13, 44, 84, 0.8)), url('hero-bg.jpg'); background-size: cover; background-position: center; color: white; padding: 100px 40px; text-align: center;">
+            <div class="container">
+                <h1 style="color: white;">Dr. Logenthiran Machap</h1>
+                <p class="lead">Senior Lecturer | Bioinformatics | Machine Learning | Data Science</p>
+                <p>Advancing impactful research while inspiring and mentoring students.</p>
+                <a href="contact.html" class="btn-custom">Contact Me</a>
+                <a href="about.html" class="btn btn-outline-light ms-2 rounded-pill px-4">View Profile</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card p-4">
+                            <i class="fas fa-award fa-3x text-warning mb-3"></i>
+                            <h5>Recent Awards</h5>
+                            <p>2025 GOLD Award (Professional) - i-JaMCSIIX</p>
+                            <a href="research.html" class="text-decoration-none">View Honours &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4">
+                            <i class="fas fa-flask fa-3x text-primary mb-3"></i>
+                            <h5>Research</h5>
+                            <p>Program Head MTUN Grant 2024-2026</p>
+                            <a href="research.html" class="text-decoration-none">View Grants &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4">
+                            <i class="fas fa-book fa-3x text-success mb-3"></i>
+                            <h5>Publications</h5>
+                            <p>Multiple Scopus-indexed journals & conferences</p>
+                            <a href="publications.html" class="text-decoration-none">View List &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Dr. Logenthiran Machap. All Rights Reserved.</p>
+                <p class="small">Department of Mathematics and Statistics, Faculty of Applied Sciences and Technology, UTHM Edu Hub Pagoh, KM1, Jalan Panchor, Pagoh UTHM, 84600, Johor, Malaysia</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.querySelector('.overlay').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

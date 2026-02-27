@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Dr. Logenthiran Machap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Dr. Logen</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            
+            <div class="accordion" id="pubAccordion">
+                <!-- 2025 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2025">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025">
+                            <strong>2025 Publications</strong>
+                        </button>
+                    </h2>
+                    <div id="collapse2025" class="accordion-collapse collapse show" data-bs-parent="#pubAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Machap, L., et al. (2025). Cancer Omics Data Analysis with Machine Learning Methods: A Review. <em>International Journal of Basic and Applied Sciences</em>. (accepted)</li>
+                                <li class="list-group-item">Machap, L., et al. (2025). Omics Data Analysis for Cancer Diagnosis and Prognosis: A Comparative Study of Deep Learning Techniques. <em>Springer Proceedings in Physics, vol 427</em>.</li>
+                                <li class="list-group-item">Azmi, N.S., et al. (2025). Comparative Analysis of Graph-Based Integration Methods for Multi-Omics Integration in Cancer Subtype Classification.</li>
+                                <li class="list-group-item">Arumugam, A., et al. (2025). Optimizing Job Shop Scheduling: A Comparative Analysis Of Metaheuristic Approaches, <em>SPRINGER</em>.</li>
+                                <li class="list-group-item">Machap, L., et al. (2025). Feature Selection Techniques for Enhancing Predictive Accuracy in Deep Learning Models for Breast Cancer Drug Response. <em>ICoAEM 2025</em>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2022 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2022">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2022">
+                            <strong>2022 Publications</strong>
+                        </button>
+                    </h2>
+                    <div id="collapse2022" class="accordion-collapse collapse" data-bs-parent="#pubAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">L. Machap and K. Moorthy, "Survival analysis for the identified cancer gene subtype from the co-clustering algorithm," <em>2022 International Conference on Electrical, Computer and Energy Technologies (ICECET)</em>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2021 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2021">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2021">
+                            <strong>2021 Publications</strong>
+                        </button>
+                    </h2>
+                    <div id="collapse2021" class="accordion-collapse collapse" data-bs-parent="#pubAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Jaber, A. N., et al. (2021). The importance of data classification using machine learning methods in microarray data. <em>Telkomnika</em>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2020 & Older -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2020">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2020">
+                            <strong>2020 & Older Publications</strong>
+                        </button>
+                    </h2>
+                    <div id="collapse2020" class="accordion-collapse collapse" data-bs-parent="#pubAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Isaac, Y. Z. E., et al. (2020). Gene Regulatory Network Construction of Ovarian Cancer... <em>ICIMU</em>.</li>
+                                <li class="list-group-item">Goh, S.Y., et al. (2020). IoT-based Vehicle Carbon Monoxide Monitoring... <em>IJATCSE</em>.</li>
+                                <li class="list-group-item">Machap, L., et al. (2019). Classification of cancer gene subtypes... <em>IJITEE</em> (Scopus).</li>
+                                <li class="list-group-item">Machap, L., et al. (2019). Co-clustering algorithm for the identification of cancer subtypes... <em>TELECOM</em> (Scopus Q2).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Logenthiran Machap. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
