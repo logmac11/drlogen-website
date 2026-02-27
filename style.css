@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #0d2c54; /* Deep Academic Blue */
-    --secondary-color: #c9a227; /* Gold */
+    --primary-color: #0d2c54;
+    --secondary-color: #c9a227;
     --light-bg: #f8f9fa;
     --text-color: #333;
     --sidebar-width: 260px;
-    --page-bg: #87CEEB; /* Sky Blue Background */
+    --page-bg: #87CEEB;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
     margin: 0;
     overflow-x: hidden;
-    background-color: var(--page-bg); /* Sky Blue Page Background */
+    background-color: var(--page-bg);
 }
 
 h1, h2, h3, h4, h5 {
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
 }
 
-/* --- Mobile Toggle --- */
+/* --- Mobile Toggle Button --- */
 .sidebar-toggle {
     display: none;
     position: fixed;
@@ -108,28 +108,74 @@ h1, h2, h3, h4, h5 {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* --- Responsive --- */
+/* --- Overlay for Mobile --- */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE FIX (Max-width 991px)
+   ========================================= */
 @media (max-width: 991px) {
-    .sidebar { left: -var(--sidebar-width); box-shadow: 2px 0 10px rgba(0,0,0,0.2); }
-    .sidebar.active { left: 0; }
-    .main-content { margin-left: 0; }
-    .sidebar-toggle { display: block; }
-    .overlay {
-        display: none;
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(0,0,0,0.5);
-        z-index: 999;
+    /* Hide sidebar off-screen by default */
+    .sidebar {
+        left: -260px; 
     }
-    .overlay.active { display: block; }
+    
+    /* Slide in sidebar when active class is added */
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Remove margin from main content so it takes full width */
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Show the hamburger toggle button */
+    .sidebar-toggle {
+        display: block;
+    }
+    
+    /* Show overlay when sidebar is open */
+    .overlay.active {
+        display: block;
+    }
+    
+    /* Adjust sections for mobile */
+    section {
+        padding: 40px 20px;
+        margin: 10px;
+    }
+    
+    /* Adjust hero section */
+    .hero {
+        padding: 60px 20px;
+        margin: 10px;
+    }
+    
+    /* Adjust footer */
+    footer {
+        margin: 10px;
+        padding: 20px;
+    }
 }
 
-/* --- Sections with White Background for Readability --- */
+/* --- General Components --- */
 section {
     padding: 60px 40px;
-    background-color: white; /* White content area for readability */
+    background-color: white;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -224,7 +270,6 @@ footer {
     text-align: center;
 }
 
-/* --- Hero Section (Kept with gradient for contrast) --- */
 .hero {
     background: linear-gradient(rgba(13, 44, 84, 0.9), rgba(13, 44, 84, 0.8)), url('hero-bg.jpg');
     background-size: cover;
